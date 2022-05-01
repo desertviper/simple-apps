@@ -1,0 +1,29 @@
+
+application {
+  config {
+    baseName todo,
+    applicationType monolith,
+    packageName com.strongmind.todo
+    authenticationType jwt,
+    databaseType sql,
+    devDatabaseType h2Disk,
+    prodDatabaseType postgresql,
+    clientFramework angular
+  }
+  entities *
+}
+
+enum ItemStatus {
+	ToDo,
+    InProgress,
+    Done
+}
+
+entity ToDoItem {
+	description String,
+	status ItemStatus
+}
+
+relationship ManyToOne {
+  ToDoItem{user(login)} to User
+}

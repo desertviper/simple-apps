@@ -1,0 +1,33 @@
+{
+  "applications": ["todo"],
+  "changelogDate": "20220501055711",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "to_do_item",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "ItemStatus",
+      "fieldValues": "ToDo,InProgress,Done"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ToDoItem",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "toDoItem",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

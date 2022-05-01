@@ -48,6 +48,7 @@ public class CacheConfiguration {
             createCache(cm, com.strongmind.todo.domain.User.class.getName());
             createCache(cm, com.strongmind.todo.domain.Authority.class.getName());
             createCache(cm, com.strongmind.todo.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.strongmind.todo.domain.ToDoItem.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,10 @@
+{
+  "todoApp": {
+    "ItemStatus": {
+      "null": "",
+      "ToDo": "ToDo",
+      "InProgress": "InProgress",
+      "Done": "Done"
+    }
+  }
+}
