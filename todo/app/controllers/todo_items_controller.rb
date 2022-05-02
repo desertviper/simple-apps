@@ -18,6 +18,7 @@ class TodoItemsController < ApplicationController
 
   # GET /todo_items/1/edit
   def edit
+    @statuslist = ['Not Started', 'In Progress', 'Completed']
   end
 
   # POST /todo_items or /todo_items.json
