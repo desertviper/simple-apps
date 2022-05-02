@@ -1,0 +1,14 @@
+enum ItemStatus {
+	ToDo,
+    InProgress,
+    Done
+}
+
+entity ToDoItem {
+	description String,
+	status ItemStatus
+}
+
+relationship ManyToOne {
+  ToDoItem{user(login)} to User
+}
